@@ -1,24 +1,22 @@
 def fizz_buzz(number)
- puts "数字を入力してください"
- if (input / 3) =
-   if (input / 5) =
-     puts "fizzbuzz!"
-   end
-   puts "fizz"
-   elsif (input / 5) =
-     puts "buzz"
-   else
-     puts "#(input)"
-
- end
-
-
-puts "結果は…"
+  # 引数を定義
+  if number % 15 == 0
+  "fizzbuzz"
+  elsif number % 5 == 0
+   "buzz"
+  elsif number % 3 == 0
+  "fizz"
+  else
+   number.to_s
+  end
 end
-input = gets
-# 数字を入力
-# 数字が３で割り切る→truw-fizz
-# 数字が５で割り切る→true-buzz
-# 両方で割り切れる→fizzbu
-# どれにも該当しない→数値を文字列に変えて返す
 
+ puts "数字を入力してください"
+# 1出力
+ input = gets.to_i
+#2 値の入力
+ puts "結果は…"
+# 出力
+
+ puts fizz_buzz(input)
+# メソッドを呼び出す
