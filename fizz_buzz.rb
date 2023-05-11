@@ -1,13 +1,13 @@
-def fizz_buzz(number)
-  # 引数を定義
-  if number % 15 == 0
+def fizz_buzz(input)
+  # 引数を定義(可変)
+  if input % 15 == 0
   "fizzbuzz"
-  elsif number % 5 == 0
+  elsif input % 5 == 0
    "buzz"
-  elsif number % 3 == 0
+  elsif input % 3 == 0
   "fizz"
   else
-   number.to_s
+   input.to_s
   end
 end
 
@@ -19,4 +19,4 @@ end
 # 出力
 
  puts fizz_buzz(input)
-# メソッドを呼び出す
+# メソッドを呼び出す 値を渡す
